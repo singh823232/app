@@ -25,7 +25,7 @@ const Resetpass = () => {
 
     const handleSubmit = (event) => {
         const user = { ...userOTP }
-        axios.post('https://sattu-app.herokuapp.com/resetpass', user)
+        axios.post('http:localhost:8000/resetpass', user)
             .then(res => {
                 alert("OTP sended to your email");
                 history.push("/otpverify")
