@@ -23,7 +23,7 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         const user = { ...userLogin }
-        axios.post('http://localhost:8000/login', user)
+        axios.post('https://sattu-app.herokuapp.com/login', user)
             .then(res => {
                 alert(`${res.data}`);
                 if (res.data === "Login successfull") {

@@ -49,7 +49,7 @@ const Registration = () => {
         // setIsError(false);localhost:8000/register
 
         const user = { ...userRegistration };
-        axios.post('http://localhost:8000/register', user)
+        axios.post('https://sattu-app.herokuapp.com/register', user)
             .then(res => {
                 console.log(res);
                 alert(`${res.data}`);
